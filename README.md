@@ -1,2 +1,8 @@
 # Gif-it
-Creates a Gif for a provided Video File
+
+Converts video to Gif
+
+## Dependencies
+
+* imageio
+* imageio-ffmpeg
