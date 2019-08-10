@@ -1,7 +1,5 @@
 import imageio, os
 
-clip = os.path.abspath('clip.mp4')
-
 def gif_it(inputPath, targetFormat):
 
     outputPath = os.path.splitext(inputPath)[0] + targetFormat
@@ -15,5 +13,7 @@ def gif_it(inputPath, targetFormat):
         writer.append_data(frames)
 
     writer.close()
-    
-gif_it(clip, ".gif")
+
+if __name__ == "__main__":
+    clip = os.path.abspath('clip.mp4')
+    gif_it(clip, ".gif")
